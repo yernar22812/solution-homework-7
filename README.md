@@ -1,4 +1,4 @@
-# Streaming-Service Binge Mode (Iterator pattern)
+# Streaming-Service Binge Mode (Iterator pattern) - part1
 
 ## Почему использовать Iterator вместо прямого List<Episode>:
 - **Инкапсуляция:** скрывает детали хранения (ArrayList, LinkedList, lazy loading)
@@ -15,7 +15,7 @@
 - Watch History Filter: показывает только непросмотренные серии
 - Бенчмарк: замер скорости обхода 10 000 эпизодов
 
-# Mediator Pattern (Airport Tower Simulator)
+# Mediator Pattern (Airport Tower Simulator) - part2
 Почему Mediator лучше прямого общения самолётов:
 
     -Упрощает коммуникацию: все через одну башню (ControlTower), а не каждый с каждым
