@@ -40,12 +40,11 @@ public class Main {
         }
 
         System.out.println("\nSkip Intro (start from 60s):");
-        SkipIntroIterator skipIntroIterator = new SkipIntroIterator(season1.createSeasonIterator(), 60);
+        SkipIntroIterator skipIntroIterator = new SkipIntroIteratorImpl(season1.createSeasonIterator(), 60);
         while (skipIntroIterator.hasNext()) {
             EpisodeView view = skipIntroIterator.next();
             view.play();
         }
-
         System.out.println("\nWatch only unseen episodes:");
         Set<String> watched = new HashSet<>();
         watched.add("S1E1");
